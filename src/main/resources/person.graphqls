@@ -1,0 +1,19 @@
+schema{
+query: Query
+}
+
+type Query{
+
+getAllPerson : [Person]
+findPerson(email: String) : Person
+#    Mention what all respones expecting
+}
+
+type Person{
+
+id: String
+name: String
+mobile: String
+email: String
+address: [String]
+}
